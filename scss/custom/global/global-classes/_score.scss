@@ -1,0 +1,43 @@
+.score {
+   display: inline-block;
+   color: $site-orange;
+   position: relative;
+
+
+   span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+   }
+
+   &:before,
+   span:before {
+      display: block;
+   }
+
+   &.circles,
+   &.stars {
+      font-family: FA5S;
+
+      &:before {
+         font-family: FA5;
+      }
+   }
+
+   &.stars {
+      &:before,
+      span:before {
+         content: "\f005\f005\f005\f005\f005";
+      }
+   }
+
+   &.circles {
+      font-size: 80%;
+      &:before,
+      span:before {
+         letter-spacing: 0.1rem;
+         content: "\f111\f111\f111\f111\f111";
+      }
+   }
+}

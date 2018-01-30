@@ -1,0 +1,55 @@
+.compare-insurance {
+   background-color: lighten($site-orange, 40%);
+   border-top: 2px solid $site-purple;
+   border-bottom: 2px solid $site-purple;
+
+   .wrapper {
+      background: #FFF;
+      border-radius: $site-default-radius;
+      border: $site-purple 1px solid;
+      padding: $site-default-rem 0;
+      margin: 0 0 $site-default-rem * 2;
+
+      img {
+         border-radius: $site-default-radius;
+         padding: 0 $site-default-rem * 2 $site-default-rem;
+         max-height: 125px;
+         object-fit: cover;
+         width: 100%;
+      }
+
+      .boxed {
+         font-size: 120%;
+         margin: $site-default-rem 0;
+
+         &.orange,
+         &.purple,
+         &.yellow {
+            border-bottom: $site-purple $site-default-rem solid;
+            padding: $site-default-rem;
+            border-radius: $site-default-radius;
+         }
+
+         &.purple {
+            background: rgba($site-purple, 0.2);
+            border-color: rgba($site-purple, 0.3);
+         }
+
+         &.orange {
+            background-color: lighten($site-orange, 30%);
+            border-color: lighten($site-orange, 20%);
+         }
+
+         &.yellow {
+            background-color: lighten($site-orange, 40%);
+            border-color: lighten($site-orange, 30%);
+         }
+      }
+   }
+
+   .button {
+      margin: 0;
+      font-size: 120%;
+      text-transform: uppercase;
+   }
+}

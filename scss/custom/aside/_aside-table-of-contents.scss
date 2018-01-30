@@ -1,0 +1,27 @@
+.table-of-contents {
+   border: $site-default-radius solid $site-gray-light;
+   border-radius: $site-default-rem;
+   padding: $site-default-rem * 2;
+
+   h2 {
+      color: $site-default-font-color;
+   }
+
+   ul {
+      margin-left: $site-default-rem * 3;
+      li {
+         &::before {
+            content: " ";
+         }
+      }
+
+      &.arrow {
+         li {
+            &::before {
+               font-family: FA5S;
+               content: "\f054";
+            }
+         }
+      }
+   }
+}

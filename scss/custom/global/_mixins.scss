@@ -1,0 +1,9 @@
+@mixin fa-li-icon( $icon : "\f054", $color : $site-blue) {
+   content: $icon;
+   font-family: FA5S;
+   margin-left: -1.5rem;
+   padding-right: 1.5rem;
+   width: 1.5rem;
+   color: $color;
+   display: inline-block;
+}

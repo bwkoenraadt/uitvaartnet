@@ -1,0 +1,28 @@
+// colours
+
+$site-gray-light: #d4dbee;
+$site-gray-dark: #8da0ab;
+$site-gray: #f9f9f9;
+$site-blue: get-color("primary");
+$site-purple: #6B242F;
+$site-dark-blue: #004279;
+$site-orange: get-color("warning");
+$site-dark-orange: #f5692a;
+$site-default-font-color: #0a0a0a;
+$site-gray-font-color: #8799a8;
+$site-default-font-size: 15px;
+
+
+
+// sizes
+
+$site-default-rem: 0.5rem;
+$site-default-radius: 0.1rem;
+
+//default shadows
+$default-boxed-shadow: 0 4px 3px rgba(0, 0, 0, 0.1), 0 8px 13px rgba(0, 0, 0, 0.1), 0 18px 23px rgba(0, 0, 0, 0.1);
+$second-boxed-shadow: 0 3px 0px rgba(0, 0, 0, 0.1);
+
+
+// default transition
+$site-default-transition: all 0.2s ease;

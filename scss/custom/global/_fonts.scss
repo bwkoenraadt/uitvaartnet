@@ -1,0 +1,77 @@
+@font-face {
+   font-family: 'nunito';
+   src: url('../fonts/nunito-regular-webfont.woff2') format('woff2'), url('../fonts/nunito-regular-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+   letter-spacing: 0.025rem
+}
+@font-face {
+   font-family: 'nunito_bold';
+   src: url('../fonts/nunito-bold-webfont.woff2') format('woff2'), url('../fonts/nunito-bold-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'nunito_italic';
+   src: url('../fonts/nunito-italic-webfont.woff2') format('woff2'), url('../fonts/nunito-italic-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'nunito_bold_italic';
+   src: url('../fonts/nunito-bolditalic-webfont.woff2') format('woff2'), url('../fonts/nunito-bolditalic-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'FA5L';
+   font-style: normal;
+   font-weight: 300;
+   src: url("../fonts/fontawesome-light-300.eot");
+   src: url("../fonts/fontawesome-light-300.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome-light-300.woff2") format("woff2"), url("../fonts/fontawesome-light-300.woff") format("woff"), url("../fonts/fontawesome-light-300.ttf") format("truetype"), url("../fonts/fontawesome-light-300.svg#fontawesome") format("svg");
+}
+@font-face {
+   font-family: 'FA5';
+   font-style: normal;
+   font-weight: 400;
+   src: url("../fonts/fontawesome-regular-400.eot");
+   src: url("../fonts/fontawesome-regular-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome-regular-400.woff2") format("woff2"), url("../fonts/fontawesome-regular-400.woff") format("woff"), url("../fonts/fontawesome-regular-400.ttf") format("truetype"), url("../fonts/fontawesome-regular-400.svg#fontawesome") format("svg");
+}
+@font-face {
+   font-family: 'FA5S';
+   font-style: normal;
+   font-weight: 900;
+   src: url("../fonts/fontawesome-solid-900.eot");
+   src: url("../fonts/fontawesome-solid-900.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome-solid-900.woff2") format("woff2"), url("../fonts/fontawesome-solid-900.woff") format("woff"), url("../fonts/fontawesome-solid-900.ttf") format("truetype"), url("../fonts/fontawesome-solid-900.svg#fontawesome") format("svg");
+}
+@font-face {
+   font-family: 'FA5B';
+   font-style: normal;
+   font-weight: 900;
+   src: url("../fonts/fontawesome-brands-900.eot");
+   src: url("../fonts/fontawesome-brands-900.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome-brands-900.woff2") format("woff2"), url("../fonts/fontawesome-brands-900.woff") format("woff"), url("../fonts/fontawesome-brands-900.ttf") format("truetype"), url("../fonts/fontawesome-brands-900.svg#fontawesome") format("svg");
+}
+
+.fa {
+   font-family: 'FA5';
+
+   &.fal {
+      font-family: 'FA5L';
+      font-weight: 300;
+   }
+
+   &.far {
+      font-weight: 400;
+   }
+
+   &.fas {
+      font-family: 'FA5S';
+      font-weight: 900;
+   }
+
+   &.fab {
+      font-family: 'FA5B';
+      font-weight: 900;
+   }
+}

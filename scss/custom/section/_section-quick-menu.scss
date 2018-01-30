@@ -1,0 +1,102 @@
+.quick-menu {
+   padding-top: 0;
+
+   .box {
+      h2 {
+         display: block;
+         background: $site-purple;
+         color: #FFF;
+         padding: $site-default-rem * 2 $site-default-rem * 3;
+         border-right: 1px solid #FFF;
+         text-transform: uppercase;
+         margin: 0;
+      }
+
+      .content {
+         border-right: 1px solid $site-purple;
+         padding: $site-default-rem * 2 $site-default-rem * 3;
+
+         ul.items {
+            margin-left: 0;
+            margin-bottom: 0;
+
+            li {
+               border-bottom: 1px dashed $site-purple;
+               padding-bottom: $site-default-rem*2;
+               margin-bottom: $site-default-rem*2;
+
+               &:before {
+                  content: '';
+                  margin-right: 0;
+               }
+
+               &:last-child() {
+                  border: none;
+                  margin-bottom: 0;
+                  padding-bottom: 0;
+               }
+
+               a {
+                  color: $site-default-font-color;
+                  font-size: 120%;
+
+                  i {
+                     width: $site-default-rem * 6;
+                     color: $site-purple;
+                     font-size: 150%;
+                     display: inline-block;
+                     vertical-align: middle;
+                  }
+               }
+            }
+         }
+      }
+
+      &.alt {
+         h2 {
+            color: $site-purple;
+            border: none;
+            background: lighten($site-purple, 50%);
+         }
+
+         .content {
+            border: none;
+
+            .button {
+               margin-bottom: 0;
+            }
+         }
+      }
+   }
+}
+
+@include breakpoint(medium down) {
+   .quick-menu {
+      .box {
+         h2 {
+            padding: $site-default-rem * 2;
+         }
+
+         .content {
+            border: none;
+            padding: $site-default-rem * 2;
+         }
+
+         &.alt {
+            .content {
+               border: 1px solid lighten($site-purple, 50%);
+            }
+         }
+      }
+   }
+}
+@include breakpoint(small only) {
+   .quick-menu {
+      .box {
+         .content {
+            border: 1px solid $site-purple;
+            margin: 0 0 $site-default-rem;
+         }
+      }
+   }
+}

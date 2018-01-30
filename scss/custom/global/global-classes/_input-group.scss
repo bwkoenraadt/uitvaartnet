@@ -1,0 +1,18 @@
+.input-group {
+   .input-group-label {
+      background: #EEE;
+
+      i {
+         color: $site-orange;
+      }
+   }
+
+   .button {
+      margin-bottom: 0;
+      border-radius: 0 $site-default-radius $site-default-radius 0;
+
+      &:after {
+         padding-left: 0;
+      }
+   }
+}

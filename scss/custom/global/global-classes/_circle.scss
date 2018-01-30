@@ -1,0 +1,58 @@
+.circle {
+   border-radius: 50%;
+   width: $site-default-rem * 6;
+   height: $site-default-rem * 6;
+   line-height: $site-default-rem * 6;
+   display: inline-block;
+   text-align: center;
+   font-size: 120%;
+
+   &,
+   i,
+   span {
+      color: #FFF;
+   }
+
+   &.green {
+      background-color: get-color('success');
+   }
+
+   &.purple {
+      background-color: $site-purple;
+   }
+
+   &.blue {
+      background-color: get-color('primary');
+   }
+
+   &.orange {
+      background-color: $site-dark-orange;
+   }
+
+   &.empty {
+      line-height: $site-default-rem * 6 - $site-default-radius * 4;
+      border: $site-default-radius * 2 solid #fff;
+      background-color: transparent;
+
+
+      &.orange {
+         color: $site-orange;
+         border-color: $site-orange;
+      }
+
+      &.purple {
+         color: $site-purple;
+         border-color: $site-purple;
+      }
+
+      &.blue {
+         color: get-color('primary');
+         border-color: get-color('primary');
+      }
+
+      &.green {
+         color: get-color('success');
+         border-color: get-color('success');
+      }
+   }
+}

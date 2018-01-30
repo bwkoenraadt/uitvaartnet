@@ -1,0 +1,29 @@
+.breadcrumb {
+   padding: 0;
+   margin: 0;
+   border-top: $site-default-radius solid $site-purple;
+
+   ul {
+      margin: $site-default-rem 0;
+      padding: 0;
+      display: inline-flex;
+      list-style: none;
+
+      li {
+         position: relative;
+
+         a {
+            &::after {
+               font-family: FA5S;
+               content: "\f054";
+               padding: $site-default-rem $site-default-rem * 2;
+            }
+         }
+      }
+   }
+}
+@include breakpoint(small only) {
+   .breadcrumb {
+      display: none;
+   }
+}

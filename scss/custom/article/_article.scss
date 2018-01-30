@@ -1,0 +1,24 @@
+.article,
+article {
+   padding: $site-default-rem * 4 0;
+
+   ul {
+      list-style: none;
+      margin-left: $site-default-rem * 5;
+
+      li {
+         &:before {
+            display: inline-block;
+            width: $site-default-rem * 3;
+            margin-left: -$site-default-rem * 3;
+            content: "\f111";
+            font-family: 'FA5S';
+            color: $site-purple;
+            font-size: 80%;
+         }
+      }
+   }
+   section{
+      padding: 0;
+   }
+}

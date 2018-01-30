@@ -1,0 +1,28 @@
+.table-of-content {
+   ul {
+      margin: 0;
+
+      li {
+         &:before {
+            content: "";
+         }
+         a {
+            padding-left: $site-default-rem;
+            i {
+               width:  $site-default-rem * 3;
+            }
+            &.is-active{
+               padding-left: $site-default-rem - $site-default-radius;
+               border-left:  $site-default-radius solid $site-orange;
+               border-radius: $site-default-radius;
+            }
+         }
+      }
+   }
+}
+
+.is-stuck {
+   .table-of-content {
+      padding: 0;
+   }
+}

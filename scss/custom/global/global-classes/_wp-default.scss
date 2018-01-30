@@ -1,0 +1,18 @@
+.alignleft {
+   display: inline;
+   float: left;
+   margin: $site-default-rem $site-default-rem 0 0;
+}
+
+.alignright {
+   display: inline;
+   float: right;
+   margin: $site-default-rem 0 0  $site-default-rem;
+}
+
+.aligncenter {
+   clear: both;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}

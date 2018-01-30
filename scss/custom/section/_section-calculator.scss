@@ -1,0 +1,36 @@
+.calculator {
+
+    .price,
+    .calculation {
+        border: 2px solid $site-orange;
+        border-radius: $site-default-radius;
+    }
+    .price{
+      padding: $site-default-rem;
+      margin-top: $site-default-rem;
+   }
+    .slider {
+        background-color: $site-orange;
+    }
+
+    .slider-fill {
+        background-color: darken($site-orange, 10%);
+    }
+
+    .slider-handle {
+        background-color: $site-purple;
+        border-radius: 5px;
+    }
+
+    .sub-price {
+      display: block;
+      padding: $site-default-rem;
+      border: 1px solid $site-gray;
+      background-color: $site-gray-light;
+
+      &.active{
+         background-color: #FFF;
+         border-color: $site-orange;
+      }
+    }
+}

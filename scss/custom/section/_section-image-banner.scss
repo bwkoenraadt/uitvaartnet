@@ -1,0 +1,18 @@
+.image-banner {
+   border-top: $site-default-rem / 2 solid $site-purple;
+   border-bottom: $site-default-rem / 2 solid $site-purple;
+   background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('https://image.ibb.co/hxVKkG/Adobe_Stock_71621123.jpg') no-repeat center bottom / cover;
+   padding: $site-default-rem * 7 0;
+
+   h1,
+   h2,
+   p {
+      color: #FFF;
+   }
+
+   .box {
+      background: rgba(0, 0, 0, 0.4);
+      padding: $site-default-rem $site-default-rem * 2;
+      border-radius: $site-default-radius;
+   }
+}

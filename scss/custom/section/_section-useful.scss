@@ -1,0 +1,59 @@
+.useful {
+   padding: $site-default-rem 0;
+   margin: $site-default-rem 0;
+   border-bottom: 2px dotted $site-gray-light;
+   border-top: 2px dotted $site-gray-light;
+
+   .reply {
+      h2 {
+         margin: 0;
+      }
+
+      .feedback-text {
+         display: none;
+
+         input[type=text],
+         textarea {
+            margin: $site-default-rem 0;
+            width: 100%;
+         }
+
+         textarea {
+            height: 8rem;
+         }
+      }
+
+      input[type=radio] {
+         display: none;
+
+         & + label {
+            margin: $site-default-rem 0;
+            border-radius: $site-default-radius;
+            color: $site-purple;
+            border: $site-default-radius solid $site-purple;
+            padding: $site-default-rem $site-default-rem * 2;
+            i{
+               font-size: 120%
+            }
+         }
+
+         &:checked {
+            & + label {
+               background: #FFF;
+               background: $site-purple;
+               color: #FFF;
+            }
+
+            & + label:after {
+               content: '\f00c';
+               font-family: FA5;
+               padding-left: 0.5rem;
+            }
+
+            & ~ div {
+               display: block;
+            }
+         }
+      }
+   }
+}

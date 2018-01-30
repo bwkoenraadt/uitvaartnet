@@ -1,0 +1,99 @@
+.top-header {
+   padding: $site-default-rem * 4 0;
+
+   ul {
+      li {
+
+         a {
+            padding: 0 $site-default-rem $site-default-rem * 2;
+            white-space: nowrap;
+            color: $site-default-font-color;
+            border-bottom: $site-default-radius * 2 solid transparent;
+            margin: 0 $site-default-rem / 2;
+         }
+
+         &.current-menu-item,
+         &:hover {
+            a {
+               color: $site-default-font-color;
+               border-bottom-color: get-color('warning');
+               border-radius: $site-default-radius * 2;
+            }
+         }
+      }
+   }
+}
+@include breakpoint(medium down) {
+   .top-header {
+      .top-bar {
+         ul {
+            li {
+               a {
+                  font-size: 120%;
+               }
+            }
+         }
+      }
+   }
+}
+@include breakpoint(small only) {
+   .top-header {
+      padding: $site-default-rem 0;
+
+      .title-bar {
+         background: $site-orange;
+         margin-top: $site-default-rem;
+      }
+
+      .top-bar {
+         background: $site-orange;
+         border-bottom-left-radius: $site-default-rem;
+
+         ul {
+            display: block;
+            margin: 0 $site-default-rem;
+
+            li {
+               display: block;
+               border-bottom: 1px solid #FFF;
+               margin: $site-default-rem 0;
+
+               a {
+                  color: #FFF;
+                  position: relative;
+                  padding-left: 0;
+                  display: block;
+                  width: 100%;
+
+                  &:after {
+                     content: '\f105';
+                     font-family: 'FA5';
+                     position: absolute;
+                     font-size: 200%;
+                     right: 0;
+                     top: 0;
+                  }
+               }
+
+               &:last-child {
+                  border: none;
+               }
+            }
+         }
+      }
+   }
+}
+// zorgen dat mobile niet getoond word op desktop
+
+.no-js {
+   @include breakpoint(small only) {
+      .top-bar {
+         display: none;
+      }
+   }
+   @include breakpoint(medium) {
+      .title-bar {
+         display: none;
+      }
+   }
+}

@@ -1,0 +1,122 @@
+// global
+
+body {
+   font-family: 'nunito';
+   color: $site-default-font-color;
+   font-size: $site-default-font-size;
+
+   h1,
+   h2,
+   h3,
+   h4,
+   h5 {
+      color: $site-purple;
+      font-family: 'nunito_bold';
+   }
+
+   i {
+      font-family: 'nunito_italic';
+   }
+
+   b,
+   strong {
+      font-family: 'nunito_bold';
+
+      i {
+         font-family: 'nunito_bold_italic';
+      }
+   }
+
+   input[type="text"],
+   textarea {
+      background-color: #ffffff;
+      box-shadow: $second-boxed-shadow;
+      border-radius: $site-default-radius;
+      height: 40px;
+      font-size: $site-default-font-size;
+   }
+
+   textarea {
+      height: $site-default-rem * 10;
+   }
+
+   select {
+      border-color: $site-purple;
+      border-width: 2px;
+      background-size: 20px;
+      padding: 0.7rem 1rem;
+      height: 100%;
+      background-image: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="512px" height="512px" > <path fill="#{$site-purple}" id="phone" d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"/> </svg>');
+
+      &:focus {
+         border-color: $site-purple;
+         border-width: 2px;
+      }
+   }
+
+   hr {
+      border-color: $site-gray-light;
+   }
+
+   a,
+   a:hover {
+      color: $site-purple;
+      font-family: 'nunito_bold';
+
+
+         &:not(.button):not(.no-out) {
+            &[target="_blank"]:after {
+               content: '\f08e';
+               margin: 0 0 0 $site-default-radius * 2;
+               font-family: FA5;
+            }
+         }
+   
+
+      &.arrow {
+         &:before {
+            content: '\f101';
+            font-family: 'FA5S';
+            padding-right: $site-default-rem;
+         }
+
+         &:hover {
+            &:before {
+               padding-right: $site-default-rem / 2;
+               padding-left: $site-default-rem / 2;
+            }
+         }
+      }
+   }
+
+   ol {
+      counter-reset: item;
+      margin-left: 0;
+
+      ol {
+         margin-left: $site-default-rem * 2;
+      }
+
+      li {
+         display: block;
+
+         &:before {
+            content: counters(item, ".") " ";
+            counter-increment: item;
+         }
+      }
+   }
+
+   .no-margin {
+      margin: 0;
+   }
+}
+@include breakpoint(small only) {
+   body {
+      table {
+         display: block;
+         width: 100%;
+         overflow-x: auto;
+      }
+   }
+}

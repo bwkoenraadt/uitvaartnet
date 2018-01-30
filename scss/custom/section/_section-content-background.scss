@@ -1,0 +1,26 @@
+.content-background {
+   margin: 0;
+   border-top: $site-default-rem / 2 solid $site-purple;
+   border-bottom: $site-default-rem / 2 solid $site-purple;
+   background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0) ), url('../temp_images/anouk.jpg') no-repeat center top / cover;
+
+   .content {
+      padding: $site-default-rem * 6 0;
+
+      &,
+      h1 {
+         color: #FFF;
+      }
+
+      p {
+         font-size: 120%;
+      }
+   }
+
+   aside {
+      h2 {
+         color: #FFF;
+         border: none;
+      }
+   }
+}

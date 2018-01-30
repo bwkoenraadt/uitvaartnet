@@ -1,0 +1,20 @@
+.most-read-faq {
+   border-top: $site-default-rem solid $site-purple;
+   background: url("../temp_images/anouk.jpg") no-repeat top center / cover;
+
+   .content {
+      @for $i from 1 through 4 {
+         &:nth-child(#{$i}) {
+            background-color: rgba(lighten($site-orange, $i * 10), 0.8);
+            padding: $site-default-rem * 2;
+            h2{
+               background: none;
+            }
+         }
+      }
+   }
+
+   hr {
+      border-color: $site-purple;
+   }
+}

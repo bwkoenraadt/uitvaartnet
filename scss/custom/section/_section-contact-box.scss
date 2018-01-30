@@ -1,0 +1,9 @@
+.contact-box {
+   background-color: lighten($site-orange, 40%);
+   border-top: 2px solid $site-purple;
+   border-bottom: 2px solid $site-purple;
+   padding:0;
+   .content{
+      padding: $site-default-rem * 4 0;
+   }
+}
