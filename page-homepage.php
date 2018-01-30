@@ -19,7 +19,7 @@
             <div class="box">
                <div class="grid-x grid-padding-x align-bottom">
                   <div class="cell">
-                     <h2>Wat kost een uitvaartverzekering?</h2>
+                     <h2>Wat kost een ?</h2>
                   </div>
 
                   <div class="large-12 medium-12 cell">
