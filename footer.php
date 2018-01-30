@@ -4,7 +4,7 @@
    <div class="grid-container">
       <div class="grid-x grid-padding-x ">
          <div class="cell">
-            <p>&copy; <?php echo date('Y'); ?> Uitvaartnet.nl alle rechten voorbehouden.</p>
+            <p>&copy; <?php echo date('Y'); ?> Uitvaartnet.nl pikhaak alle rechten voorbehouden.</p>
          </div>
       </div>
    </div>
