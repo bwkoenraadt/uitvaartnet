@@ -12,7 +12,7 @@
    <div class="grid-container">
       <div class="grid-x grid-padding-x">
          <div class="large-24 cell">
-            <h1>Kenniscentrum voor uitvaart &amp; test 2</h1>
+            <h1>Kenniscentrum voor uitvaart &amp; uitvaartverzekeringen</h1>
          </div>
          <div class="large-15 cell">
 
